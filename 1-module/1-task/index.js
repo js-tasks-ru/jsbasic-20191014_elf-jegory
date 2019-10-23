@@ -1,9 +1,9 @@
-/**
- * Power
- * @param {number} m base
- * @param {number} n index
- * @returns {number}
- */
-function pow(m, n) {
-
+// -By Egor Nazarovich-
+function pow(one, second) {
+  result = 1;
+  for (i = 0; i < second; i++) {
+    result *= one;
+  }
+  return result;
 }
+alert(pow(3, 2));

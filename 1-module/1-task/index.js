@@ -6,4 +6,3 @@ function pow(one, second) {
   }
   return result;
 }
-alert(pow(3, 2));

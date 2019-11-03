@@ -1,15 +1,11 @@
-/**
- * Эту функцию трогать не нужно
- */
+// By Egor Nazarovich
 function print(text) {
-  console.log(text);
 }
-
-/**
- * Эту функцию нужно поменять так,
- * чтобы функция sayHello работала корректно
- */
 function isValid(name) {
+  if(name && name.length >= 4 && /^\S*$/.test(name)) { 
+   return true
+  }  
+  return false
 }
 
 function sayHello() {
@@ -21,3 +17,5 @@ function sayHello() {
     print('Некорректное имя');
   }
 }
+
+sayHello('user');

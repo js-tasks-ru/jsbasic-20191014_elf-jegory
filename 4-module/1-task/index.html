@@ -7,28 +7,42 @@
 </head>
 <body>
     <script>
-        /**
-         * @typedef {Friend}
-         * @prop {string} firstName
-         * @prop {string} lastName
-         */
+      let friends = [
+    {
+        firstName: 'Artsiom',
+        lastName: 'Mezin'
+    },
+    {
+        firstName: 'Ilia',
+        lastName: 'Kantor'
+    },
+    {
+        firstName: 'Christopher',
+        lastName: 'Michael'
+    }
+];
+  
+function makeFriendsList(friends) {
+  let ul = document.createElement('ul');
+  document.body.append(ul);
+  console.log(ul);
 
-        let friends = [
-            {
-                firstName: 'Artsiom',
-                lastName: 'Mezin'
-            },
-            {
-                firstName: 'Ilia',
-                lastName: 'Kantor'
-            },
-            {
-                firstName: 'Christopher',
-                lastName: 'Michael'
-            }
-        ];
+  let liFirst = document.createElement('li');
+  liFirst.innerHTML = `firstName: Artsiom, lastName: Mezin`;
+  ul.prepend(liFirst);
+  
 
-        document.body.appendChild(makeFriendsList(friends));
+  let liAver= document.createElement('li');
+  liAver.innerHTML = `firstName: Ilia, lastName: Kantor`;
+  ul.append(liAver); 
+ 
+
+  let liLast = document.createElement('li');
+  liLast.innerHTML = `firstName: Christopher, lastName: Michael`;
+  ul.append(liLast);
+}
+
+makeFriendsList(friends);
     </script>
 </body>
 </html>

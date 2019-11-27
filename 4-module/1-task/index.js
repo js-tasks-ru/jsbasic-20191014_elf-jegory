@@ -1,27 +1,26 @@
+// --By Egor Nazarovich--
 let friends = [
   {
-      firstName: 'Artsiom',
-      lastName: 'Mezin'
+    firstName: 'Artsiom',
+    lastName: 'Mezin'
   },
   {
-      firstName: 'Ilia',
-      lastName: 'Kantor'
+    firstName: 'Ilia',
+    lastName: 'Kantor'
   },
   {
-      firstName: 'Christopher',
-      lastName: 'Michael'
+    firstName: 'Christopher',
+    lastName: 'Michael'
   }
 ];
                                             
 function makeFriendsList(friends) {
-   let ul = document.createElement('ul');
-   document.body.append(ul);
-
-
-return friends.map(friend => {
-     let liAver = document.createElement('li');
-     liAver.innerHTML = `${friend.firstName}  ${friend.lastName}`;
-    return ul.append(liAver);
-})
+  let ul = document.createElement('ul');
+  document.body.append(ul);
+  friends.map(friend => {
+    let liAver = document.createElement('li');
+    liAver.innerHTML = `${friend.firstName} ${friend.lastName}`;
+    ul.append(liAver);
+  });
+  return ul;
 }
- makeFriendsList(friends);

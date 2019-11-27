@@ -1,29 +1,28 @@
 let friends = [
-    {
-        firstName: 'Artsiom',
-        lastName: 'Mezin'
-    },
-    {
-        firstName: 'Ilia',
-        lastName: 'Kantor'
-    },
-    {
-        firstName: 'Christopher',
-        lastName: 'Michael'
-    }
-]; 
-
+  {
+      firstName: 'Artsiom',
+      lastName: 'Mezin'
+  },
+  {
+      firstName: 'Ilia',
+      lastName: 'Kantor'
+  },
+  {
+      firstName: 'Christopher',
+      lastName: 'Michael'
+  }
+];
+                                            
 function makeFriendsList(friends) {
-let ul = document.createElement('ul');
-document.body.append(ul);
+   let ul = document.createElement('ul');
+   document.body.append(ul);
+   console.log(ul);
+
 
 return friends.map(friend => {
-let liAver = document.createElement('li');
-liAver.innerHTML = `$(friend.firstName) '/n' $(friend.lastName)`;
-return ul.append(liAver);
+     let liAver = document.createElement('li');
+     liAver.innerHTML = `${friend.firstName}  ${friend.lastName}`;
+    return ul.append(liAver);
 })
-
 }
-makeFriendsList(friends);
-
-console.log(makeFriendsList(friends));
+ makeFriendsList(friends);

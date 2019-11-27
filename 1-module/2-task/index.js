@@ -2,10 +2,10 @@
 function print(text) {
 }
 function isValid(name) {
-  if(name && name.length >= 4 && /^\S*$/.test(name)) { 
-   return true
+  if (name && name.length >= 4 && /^\S*$/.test(name)) { 
+    return true;
   }  
-  return false
+  return false;
 }
 
 function sayHello() {

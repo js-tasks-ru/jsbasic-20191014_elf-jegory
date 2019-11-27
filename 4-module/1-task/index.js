@@ -16,7 +16,6 @@ let friends = [
 function makeFriendsList(friends) {
    let ul = document.createElement('ul');
    document.body.append(ul);
-   console.log(ul);
 
 
 return friends.map(friend => {
